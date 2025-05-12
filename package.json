@@ -1,0 +1,50 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start:dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start:prod": "npm run build && node dist/main.js",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "jest --silent",
+    "test:verbose": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petravetsma/crud-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petravetsma/crud-api/issues"
+  },
+  "homepage": "https://github.com/petravetsma/crud-api#readme",
+  "devDependencies": {
+    "@types/supertest": "6.0.3",
+    "@types/jest": "29.5.14",
+    "@types/node": "20.14.0",
+    "@typescript-eslint/eslint-plugin": "8.32.0",
+    "@typescript-eslint/parser": "8.32.0",
+    "dotenv": "16.5.0",
+    "eslint": "8.57.1",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.4.0",
+    "supertest": "7.1.1",
+    "jest": "29.7.0",
+    "prettier": "3.5.3",
+    "webpack": "5.99.8",
+    "webpack-cli": "5.1.4",
+    "ts-jest": "29.3.2",
+    "ts-loader": "9.5.2",
+    "ts-node": "10.9.2",
+    "ts-node-dev": "2.0.0",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "uuid": "11.1.0"
+  }
+}
